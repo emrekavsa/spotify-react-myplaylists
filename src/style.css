@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(123, 37%, 91%);
+  font-family: "Circular", "Helvetica Neue", Arial, sans-serif;
+}
+
+.buttoncontainer {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.loginbutton {
+  width: 250px;
+  height: 50px;
+  background-color: hsl(123, 37%, 91%);
+  border: 2px solid #1db954;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #1db954;
+  transition: transform 1s ease;
+}
+
+.loginbutton:hover {
+  background-color: hsl(123, 37%, 85%);
+  transform: scale(1.05);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(123, 100%, 89%);
+  padding: 0 20px;
+  height: 80px;
+  box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.08), 0 2px 4px hsla(0, 0%, 0%, 0.12);
+  margin-bottom: 20px;
+}
+
+.headerlogo {
+  width: 120px;
+}
+
+.welcomeback {
+  color: #1db954;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.username {
+  font-weight: 500;
+}
+
+.username-link {
+  text-decoration: none;
+  color: #1db954;
+  cursor: pointer;
+}
+
+.username-link:hover {
+  color: #116b30;
+}
+
+.loadingscreen {
+  margin-right: 20px;
+}
+
+.playlist-container {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.playlist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 12px;
+  width: 180px;
+  margin: 20px 0;
+}
+
+.playlist-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-out;
+}
+
+.playlist-image:hover {
+  transform: scale(1.05);
+}
+
+.playlist-title {
+  white-space: nowrap;
+  font-size: 18px;
+  text-align: center;
+}
+
+.playlist-link {
+  color: #1db954;
+}
+
+.track-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+}
+
+.track-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.track-card:hover {
+  transform: scale(1.05);
+}
+
+.track-album-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.track-name,
+.track-artist {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.track-name {
+  color: hsl(0, 0%, 13%);
+  font-size: 13px;
+}
+
+.track-artist {
+  color: hsl(0, 0%, 26%);
+  font-size: 11px;
+}
